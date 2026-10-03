@@ -1,21 +1,26 @@
 # 🎫 Ticket System Labs
 
-Welcome to my IT Support ticketing labs repository. This project showcases my hands-on experience in triaging, diagnosing, and resolving enterprise helpdesk tickets using an evidence-based troubleshooting approach.
+Welcome to my IT Support ticketing labs repository. This project highlights my ability to manage a helpdesk queue, prioritize tickets by business impact, and execute evidence-based troubleshooting for common enterprise issues.
+
+
+## 🛠️ Core Competencies Demonstrated
+*   **Queue Triage:** Prioritizing tickets based on business impact and urgency rather than first-come, first-served arrival time.
+*   **Network & OS Troubleshooting:** Diagnosing APIPA (169.254.x.x) DHCP failures, mapped drive credential desyncs, and hung server services.
+*   **Policy Compliance:** Recognizing when to escalate requests (e.g., unauthorized software installs) and executing clean, professional handoffs.
+
+## 🚀 Featured Scenario: First Shift at the Harborview Helpdesk
+
+**Triage Strategy:** 
+Jumped a high-impact printing outage (T-2087) to the front of the queue, restoring a core office function for ten blocked users before handling older, single-user tickets. Impact times urgency dictates the workflow.
+
+**Key Resolutions:**
+*   **Print Spooler Outage:** Diagnosed a network printer that answered pings but failed to print. Identified the bottleneck above the hardware layer and restarted the Print Spooler service on the server to instantly clear 14 stuck jobs across ten desks.
+*   **Network & Drive Issues:** Resolved a vanished Z: mapped drive by updating stored credentials following a password change. Restored internet connectivity for a user stuck on an APIPA address by releasing and renewing their DHCP lease, verifying the fix with a gateway ping.
+*   **Security Escalation:** Fielded an unapproved grading tool installation request. Refused to bypass admin rights, instead routing the ticket for department-head and security review, demonstrating adherence to enterprise compliance.
 
 ## 📹 Lab Demonstration Video
 *(Upload your video file to the repository and replace this link, or simply drag-and-drop the video directly into the GitHub editor)*
 
-
 https://github.com/user-attachments/assets/cc1b533f-627c-458b-b263-8da689c78c75
 
 
-
-## 🛠️ Core Competencies Demonstrated
-*   **Ticket Triage:** Assessing business impact, reading the evidence chain, and identifying root causes.
-*   **System Troubleshooting:** Resolving BSOD crash loops (e.g., `SYSTEM_SERVICE_EXCEPTION`) and driver faults using Safe Mode, Event Viewer, and Device Manager.
-*   **Non-Destructive Repair:** Prioritizing data preservation and minimizing downtime by reversing specific triggers rather than relying on heavy-handed OS reinstalls.
-
-## 🚀 Featured Scenario: The Update That Broke Payroll
-*   **The Issue:** A critical payroll workstation (PAY-01) became trapped in a BSOD crash loop following an overnight update.
-*   **The Fix:** Analyzed the stop code to identify `ldgrflt.sys` as the culprit. Booted into Safe Mode to bypass the crash loop, then successfully rolled back the LedgerPay filter driver from `4.2.0.11` to the stable `4.1.9.80` version.
-*   **The Result:** System stability restored and payroll data preserved with zero business capabilities sacrificed.
